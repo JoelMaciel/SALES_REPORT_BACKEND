@@ -1,9 +1,7 @@
 package com.joelmaciel.salesreport.api.dto.request;
 
 import com.joelmaciel.salesreport.domain.model.Product;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -13,6 +11,8 @@ import java.math.BigDecimal;
 @Builder
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class ProductRequestDTO {
 
     @NotBlank
