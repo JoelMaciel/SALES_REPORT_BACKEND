@@ -21,4 +21,17 @@ public class ProductController {
     public ProductDTO save(@RequestBody @Valid ProductRequestDTO product) {
         return productService.save(product);
     }
+
+    @PutMapping("/{productId}")
+    public ProductDTO update(@PathVariable Long productId, @RequestBody @Valid ProductRequestDTO productUpdate) {
+        return productService.update(productId, productUpdate);
+    }
+
 }
+
+
+
+
+
+
+

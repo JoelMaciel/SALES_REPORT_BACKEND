@@ -1,8 +1,6 @@
 package com.joelmaciel.salesreport.domain.model;
 
-import lombok.Builder;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -11,7 +9,9 @@ import java.math.BigDecimal;
 import java.time.OffsetDateTime;
 
 @Data
-@Builder
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder(toBuilder = true)
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
 @Entity
 public class Product {
