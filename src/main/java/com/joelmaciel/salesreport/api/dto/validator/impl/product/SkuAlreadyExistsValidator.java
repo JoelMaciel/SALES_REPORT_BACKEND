@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 @RequiredArgsConstructor
 @Component
-public class ExistsNameValidator implements Validator<ProductRequestDTO> {
+public class SkuAlreadyExistsValidator implements Validator<ProductRequestDTO> {
 
     private final ProductRepository productRepository;
 

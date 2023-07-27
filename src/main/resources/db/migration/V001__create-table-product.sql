@@ -1,11 +1,9 @@
-create table product (
-        id BIGSERIAL  not null unique,
-        name varchar(150) not null unique,
-        description varchar(255) not null ,
-        price decimal(19,2) not null,
-        sku varchar(10) not null,
-        creation_date timestamp not null ,
-        update_date timestamp not null,
-
-        primary key (id)
-    ) ;
+CREATE TABLE product (
+    id BIGSERIAL PRIMARY KEY,
+    name VARCHAR(150) NOT NULL UNIQUE,
+    description VARCHAR(255) NOT NULL,
+    price DECIMAL(19, 2) NOT NULL,
+    sku VARCHAR(10) NOT NULL UNIQUE,
+    creation_date TIMESTAMP NOT NULL,
+    update_date TIMESTAMP NOT NULL
+);
